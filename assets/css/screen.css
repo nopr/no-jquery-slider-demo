@@ -1,0 +1,66 @@
+/* Quick reset */
+dl, dt, dd, ul, ol, li, h1, h2, h3, p, blockquote, address, pre {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    vertical-align: middle;
+}
+body {
+    /* Display */
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 40em;
+    position: relative;
+    /* Appearance */
+    background: #e4e4e4;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+.slider ol, .slider ul {margin: 0 }
+.slider li { list-style: none outside }
+
+/* Items */
+.slider .items {
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+    transition: left 1s;
+}
+.slider .items li { float: left }
+.slider .items img {
+    display: block;
+    width: 100%;
+}
+
+/* Navigation dots */
+.slider .navigation {
+    margin: 10px 0;
+    text-align: center;
+}
+.slider .navigation li {
+    display: inline-block;
+    background: #ccc;
+    overflow: hidden;
+    text-indent: -2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+.slider .navigation li.is-active,
+.slider .navigation li:hover {
+    background: #666;
+    cursor: pointer;
+}

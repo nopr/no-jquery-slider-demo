@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8" />
+    <title>{{ Page Title }}</title>
+
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Keywords" name="keywords" content="{{ Keywords }}" />
+    <meta http-equiv="Description" name="description" content="{{ Description }}" />
+
+    <link rel="stylesheet" href="assets/css/screen.css" />
+
+</head>
+<body>
+
+    <div class="slider slider-one">
+        <ul class="items">
+            <li><img src="img/one.gif" /></li>
+            <li><img src="img/one.gif" /></li>
+            <li><img src="img/one.gif" /></li>
+        </ul>
+    </div>
+    <div class="slider slider-two">
+        <ul class="items">
+            <li><img src="img/two.gif" /></li>
+            <li><img src="img/two.gif" /></li>
+            <li><img src="img/two.gif" /></li>
+        </ul>
+    </div>
+    <div class="slider slider-three">
+        <ul class="items">
+            <li><img src="img/three.gif" /></li>
+            <li><img src="img/three.gif" /></li>
+            <li><img src="img/three.gif" /></li>
+        </ul>
+    </div>
+
+    <script src="assets/js/app.utils.js"></script>
+    <script>
+        if(app.supported){
+            app.require('assets/js/slider-one.js');
+            app.require('assets/js/slider-two.js');
+            app.require('assets/js/slider-three.js');
+        }
+    </script>
+
+</body>
+</html>
